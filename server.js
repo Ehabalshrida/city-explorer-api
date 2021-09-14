@@ -32,8 +32,8 @@ server.get('/weather',(req,res)=>{
             class Forecast {
                 constructor(x) {
             
-                 this.date = x.data.valid_date;
-                 this.description = x.data.weather.description;
+                 this.date = x.valid_date;
+                 this.description = x.weather.description;
 
                 }}
 
