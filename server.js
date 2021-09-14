@@ -14,7 +14,7 @@ server.get('/test', (req, res) => {
 
 })
 
-app.get('/weather',(req,res)=>{
+server.get('/weather',(req,res)=>{
     let lat=Number(req.query.lat);
     let lon=Number(req.query.lon);
     let searchQuery;
