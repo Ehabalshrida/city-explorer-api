@@ -109,3 +109,7 @@ class Forecast {
 server.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
 });
+
+server.get("/",(req,res)=>{
+    res.send("hello")
+})
