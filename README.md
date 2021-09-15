@@ -1,6 +1,6 @@
 # city-explorer-api
 
-# Name of feature: Custom Servers with Node and Express
+# Name of feature: API's
 
 # Start time:  2:00 pm
 
