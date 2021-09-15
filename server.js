@@ -95,6 +95,7 @@ console.log(forcast1)
         res.send('not found');
     }
 
+})
 
 
 class Forecast {
