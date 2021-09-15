@@ -10,23 +10,22 @@ const PORT = process.env.PORT;
 
 
 
-server.get('/test', (req, res) => {
-    res.status(200).send('hello world')
-});
-
 let handleMovie = async (req, res) => {
-    let city = req.query.searchQuery;
+               
+    let city = req.query.query;
     let url = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.MOVIE_API_KEY}&query=${city}`;
     let axiosResponsee = await axios.get(url);
     let movieResponse = axiosResponsee.data;
-    let cleanedDataa = movieResponse.data.map(item => {
-        return new Movie(element);
+    let cleanedDataa = movieResponse.results.map(item => {
+        return new Movie(item);
     })
-    res.status(200).json(cleanedDataa);
+    res.send(cleanedDataa)
+ 
+       
+
 }
 
 //localhost:8000/movie?searchQuery=Amman
-
 
 server.get('/movie', handleMovie);
 
@@ -94,8 +93,8 @@ console.log(forcast1)
     } else {
         res.send('not found');
     }
-
 })
+
 
 
 class Forecast {
