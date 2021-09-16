@@ -15,7 +15,7 @@ let Weather1modle=require('./Models/Weather1.model')
 
 server.get('/movie', Moviecontroller);
 server.get('/weather2', Weathercontroller)
-server.get('/weather1', Weather1modle)
+server.get('/weather1', Weather1comtrollker)
 
 
 
