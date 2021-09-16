@@ -1,6 +1,7 @@
 # city-explorer-api
 
-# Name of feature: API's
+# Name of feature: Refactoring into Modules
+
 
 # Start time:  2:00 pm
 
