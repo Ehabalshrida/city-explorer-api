@@ -1,9 +1,10 @@
 'use strict'
 const Weather1model=require('../Models/Weather1.model')
 
+const weatherData = require('../data/weather.json');
 
 
-Weather1comtrollker= (req,res)=>{
+let Weathercontrollers= (req,res)=>{
     let lat = Number(req.query.lat);
     let lon = Number(req.query.lon);
     console.log(1, lat)
@@ -29,4 +30,4 @@ console.log(forcast1)
     }
 };
 
-module.exports=Weather1comtrollker;
+module.exports=Weathercontrollers;

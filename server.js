@@ -9,13 +9,13 @@ const weatherData = require('./data/weather.json');
 const PORT = process.env.PORT;
 let Weathercontroller=require('./controllers/Weather.controller')
 let Moviecontroller=require('./controllers/Movie.controller')
-let Weather1modle=require('./Models/Weather1.model')
+let Weathercontrollers=require('./controllers/Weather1.controller');
 
 
 
 server.get('/movie', Moviecontroller);
 server.get('/weather2', Weathercontroller)
-server.get('/weather1', Weather1comtrollker)
+server.get('/weather1', Weathercontrollers)
 
 
 
