@@ -1,6 +1,6 @@
 # city-explorer-api
 
-# Name of feature: Refactoring into Modules
+# Name of feature: Advanced Topics
 
 
 # Start time:  2:00 pm
